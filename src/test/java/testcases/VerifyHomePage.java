@@ -18,7 +18,7 @@ public class VerifyHomePage
 	@BeforeMethod
 	public void setUp()
 	{
-		
+		//Invoke chrome browser
 		driver = BrowserFactory.getBrowser("chrome");
 		driver.get(DataProviderFactory.getConfig().getApplicationURL());
 
