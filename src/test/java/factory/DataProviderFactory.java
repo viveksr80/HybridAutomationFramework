@@ -2,6 +2,7 @@ package factory;
 
 import dataProvider.ConfigDataProvider;
 import dataProvider.ExcelDataProvider;
+import dataProvider.ExcelReader;
 
 public class DataProviderFactory 
 {
@@ -16,6 +17,12 @@ public class DataProviderFactory
 	{
 		ExcelDataProvider excel = new ExcelDataProvider();
 		return excel;
+	}
+	
+	public 	static ExcelReader getExcel1()
+	{
+		ExcelReader excel1 = new ExcelReader("./ApplicationData/AppData.xlsx");
+		return excel1;
 	}
 
 }
